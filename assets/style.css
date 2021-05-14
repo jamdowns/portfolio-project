@@ -8,7 +8,7 @@
     --buttonol: gray;
     --hoverbgc: lightskyblue;
     --hoverolc: maroon;
-    --filler: lavender
+    --filler: rgb(131, 187, 240);
 }
 
 header {
@@ -60,7 +60,10 @@ p {
 div img {
     width: 30%;
     height: 30%;
-    justify-content: right
+    justify-content: right;
+    border: 2px solid var(--buttonol);
+    border-radius: 12px;
+
 }
 
 #work-container1 {
@@ -143,7 +146,7 @@ footer h2 {
     border: 2px solid var(--buttonol);
     border-radius: 4px;
     padding: 2px;
-    background-color: lavender;
+    background-color: var(--filler);
 }
 
 footer a {
