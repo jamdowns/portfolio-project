@@ -46,6 +46,11 @@ nav a:hover {
     border-bottom: 2px solid black;
 
 }
+
+p {
+    font-size: 20px;
+}
+
 #work-container1 {
     display: inline;
     flex-wrap: wrap;
@@ -80,20 +85,9 @@ h3{
     top: 2px;
 }
 
-aside {
-    display: inline;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left;
-    border: 2px gray;
-    margin-left: 400px;
-    margin-top: 200px;
-    
-}
-
 .container {
     background-color: lightgray;
-    display: inline-block;
+    display: inline-flex;
     padding: 20px;
     border: black;
     margin: 10px;
@@ -103,7 +97,7 @@ aside {
     float: left;
     border-style: solid;
     border-width: 4px;
-    min-width: 200px;
+    max-width: 200px;
     border-radius: 16px;
     
 }
@@ -136,6 +130,7 @@ footer h2 {
 }
 
 footer a {
+    display: inline-block ;
     margin: 4px;
     color: black;
     text-decoration: none;
@@ -149,4 +144,35 @@ footer a {
 footer a:hover{
     background-color: var(--hoverbgc);
     border-color: var(--hoverolc);
+}
+
+@media screen and (max-width: 1350px) {
+    footer {
+        position: relative;
+        top: 40px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    p {
+        justify-content: left;
+    }
+
+    header a {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 }
